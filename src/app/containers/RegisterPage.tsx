@@ -3,7 +3,7 @@ import React, { useState } from "react"
 import { ToastContainer, toast } from "react-toastify"
 import axios from "axios"
 import API from "../../BaseAPI"
-import Logo from "../assets/logo.png"
+import logo from "../assets/logo.png"
 import IllustrasiLogin from "../assets/Illustrasi Login.png"
 import ButtonTemplate from "../components/ButtonTemplate"
 import { InputField } from "../components/InputField"
@@ -79,7 +79,7 @@ const RegisterPage = () => {
           <div className="flex flex-col items-center w-2/3 text-gray-900">
             <p className="text-3xl font-semibold mb-8 flex items-center gap-2">
               <span>
-                <img src={Logo} alt="Logo" />
+                <img src={logo} alt="Logo" />
               </span>
               SIMS PPOB
             </p>
