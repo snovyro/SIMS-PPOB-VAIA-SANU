@@ -1,6 +1,5 @@
 /* eslint-disable prettier/prettier */
 import React from "react"
-import logo from "../assets/Logo.png"
 import { useNavigate, useLocation } from "react-router-dom"
 
 const Navbar = () => {
@@ -34,7 +33,7 @@ const Navbar = () => {
           className="flex gap-2 font-semibold hover:cursor-pointer"
           onClick={handleHomePage}
         >
-          <img src={logo} alt="Logo" className="w-6 h-6" />
+          <img src="/assets/Logo.png" alt="Logo" className="w-6 h-6" />
           SIMS PPOB
         </p>
         <div className="flex gap-16">

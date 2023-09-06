@@ -6,8 +6,6 @@ import { Link, useNavigate } from "react-router-dom"
 import { ToastContainer, toast } from "react-toastify"
 import axios from "axios"
 import API from "../../BaseAPI"
-import logo from "../assets/Logo.png"
-import IllustrasiLogin from "../assets/Illustrasi Login.png"
 import ButtonTemplate from "../components/ButtonTemplate"
 import { RiLockPasswordLine } from "react-icons/ri"
 import { AiOutlineEye, AiOutlineEyeInvisible } from "react-icons/ai"
@@ -61,7 +59,7 @@ const LoginPage = () => {
           <div className="flex flex-col items-center w-2/3 text-gray-900">
             <p className="text-3xl font-semibold mb-8 flex items-center gap-2">
               <span>
-                <img src={logo} alt="Logo" />
+                <img src="/assets/Logo.png" alt="Logo" />
               </span>
               SIMS PPOB
             </p>
@@ -120,7 +118,7 @@ const LoginPage = () => {
         </div>
       </div>
       <img
-        src={IllustrasiLogin}
+        src="/assets/Illustrasi Login.png"
         alt="Illustrasi Login"
         className="w-1/2 h-full object-cover"
       />

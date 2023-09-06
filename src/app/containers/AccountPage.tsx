@@ -10,7 +10,6 @@ import { useNavigate } from "react-router-dom"
 import Navbar from "../components/Navbar"
 import axios from "axios"
 import API from "../../BaseAPI"
-import profileImage from "../assets/Profile Photo.png"
 import ButtonTemplate from "../components/ButtonTemplate"
 
 const AccountPage = () => {
@@ -97,7 +96,7 @@ const AccountPage = () => {
         <div className="w-7/12 flex-col flex justify-center items-center py-8">
           <label className="relative">
             <img
-              src={profileImage}
+              src="/assets/Profile Photo.png"
               alt="profile"
               className="w-24 rounded-full border cursor-pointer border-gray-300"
               onChange={handleImageChange}

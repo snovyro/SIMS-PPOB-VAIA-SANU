@@ -1,7 +1,5 @@
 /* eslint-disable prettier/prettier */
 import React, { useState } from "react"
-import profileImage from "../assets/Profile Photo.png"
-import bannerImage from "../assets/Background Saldo.png"
 
 const UserBalance = (props: { fullName: string; balance: any }) => {
   const [showBalance, setShowBalance] = useState(false)
@@ -16,7 +14,7 @@ const UserBalance = (props: { fullName: string; balance: any }) => {
       <div className="w-2/5 py-8">
         <div className="flex flex-col items-left">
           <img
-            src={profileImage}
+            src="assets/Profile Photo.png"
             alt="profile"
             className="w-16 h-16 rounded-full mb-4"
           />
@@ -70,8 +68,8 @@ const UserBalance = (props: { fullName: string; balance: any }) => {
           </p>
         </div>
         <img
-          src={bannerImage}
-          alt="background saldo"
+          src="/assets/Background Saldo.png"
+          alt="Background Saldo"
           className="w-full h-36 top-0 left-0"
         />
       </div>
