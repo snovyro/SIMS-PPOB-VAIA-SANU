@@ -11,6 +11,7 @@ import TransactionPage from "../containers/TransactionPage"
 import AccountPage from "../containers/AccountPage"
 import PaymentPage from "../containers/PaymentPage"
 import ProfilePage from "../containers/ProfilePage"
+import NotFoundPage from "../containers/NotFoundPage"
 
 const Routing = () => {
   return (
@@ -18,14 +19,15 @@ const Routing = () => {
       <Routes>
         <Route path="/login" element={<LoginPage />} />
         <Route path="/register" element={<RegisterPage />} />
+        <Route path="*" element={<NotFoundPage />} />
 
         <Route element={<PrivateRouting />}>
           <Route path="/" element={<HomePage />} />
           <Route path="/top-up" element={<TopUpPage />} />
           <Route path="/transaction" element={<TransactionPage />} />
-          <Route path="/payment/:slug" element={<PaymentPage />} />
+          <Route path="/payment-:slug" element={<PaymentPage />} />
           <Route path="/akun" element={<AccountPage />} />
-          <Route path="/akun/edit" element={<ProfilePage />} />
+          <Route path="/akun-edit" element={<ProfilePage />} />
         </Route>
       </Routes>
     </div>

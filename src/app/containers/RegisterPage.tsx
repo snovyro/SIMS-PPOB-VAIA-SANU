@@ -12,6 +12,7 @@ import {
   AiOutlineEyeInvisible,
   AiOutlineUser,
 } from "react-icons/ai"
+import { useNavigate } from "react-router-dom"
 
 const RegisterPage = () => {
   const [showPassword, setShowPassword] = useState(false)
@@ -22,6 +23,7 @@ const RegisterPage = () => {
   const [password, setPassword] = useState("")
   const [passwordConfirmation, setPasswordConfirmation] = useState("")
   const [email, setEmail] = useState("")
+  const navigate = useNavigate()
 
   const toggleShowPassword = () => {
     setShowPassword(!showPassword)
@@ -62,7 +64,7 @@ const RegisterPage = () => {
       const successMessage = response.data.message
       toast.success(successMessage)
       setTimeout(() => {
-        window.location.href = "/login"
+        navigate("/login")
       }, 1750)
     } catch (error: any) {
       const errorMessage = error.response.data.message
