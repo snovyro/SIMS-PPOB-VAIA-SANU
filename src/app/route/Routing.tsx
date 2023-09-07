@@ -25,9 +25,9 @@ const Routing = () => {
           <Route path="/" element={<HomePage />} />
           <Route path="/top-up" element={<TopUpPage />} />
           <Route path="/transaction" element={<TransactionPage />} />
-          <Route path="/payment-:slug" element={<PaymentPage />} />
+          <Route path="/payment/:slug" element={<PaymentPage />} />
           <Route path="/akun" element={<AccountPage />} />
-          <Route path="/akun-edit" element={<ProfilePage />} />
+          <Route path="/akun/edit" element={<ProfilePage />} />
         </Route>
       </Routes>
     </div>
