@@ -14,7 +14,7 @@ const UserBalance = (props: { fullName: string; balance: any }) => {
       <div className="w-2/5 py-8">
         <div className="flex flex-col items-left">
           <img
-            src="assets/Profile Photo.png"
+            src="/assets/Profile Photo.png"
             alt="profile"
             className="w-16 h-16 rounded-full mb-4"
           />

@@ -177,7 +177,9 @@ const TopUpPage = () => {
                   className="bg-text-xs py-3"
                   type="submit"
                   text="Top Up"
-                  isDisabled={amount < 10000 || amount > 1000000}
+                  isDisabled={
+                    amount < 10000 || amount > 1000000 || isNaN(amount)
+                  }
                 />
               </div>
               <div className="w-2/5 pl-4 flex gap-4">
